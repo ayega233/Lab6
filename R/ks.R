@@ -1,5 +1,3 @@
-
-
 ##old sampler used for backward compatibility
 suppressWarnings(RNGversion(min(as.character(getRversion()),"3.5.3")))
 set.seed(42, kind = "Mersenne-Twister", normal.kind = "Inversion")
@@ -71,10 +69,4 @@ knapsack_dynamic<-function(x, W){
 
 }
 
-knapsack_dynamic(x = knapsack_objects3, W = 6)
-knapsack_dynamic(x = knapsack_objects2, W = 6)
-knapsack_dynamic(x = knapsack_objects[1:8,], W = 3500)
-knapsack_dynamic(x = knapsack_objects[1:12,], W = 3500)
-knapsack_dynamic(x = knapsack_objects[1:8,], W = 2000)
-knapsack_dynamic(x = knapsack_objects[1:12,], W = 2000)
 

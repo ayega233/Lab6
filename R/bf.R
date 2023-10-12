@@ -1,4 +1,14 @@
-library(rlist)
+#' Solution for the knapsack problem
+#' @import rlist
+
+
+#' @export knapsack_brute_force
+#' @description
+#' knapsack_brute_force search, i.e. going through all possible alternatives and return the maximum value
+#'found. This approach is of complexity O(2n) since all possible combinations 2n needs to be evaluated
+#' @param x snapsack object as dataframe
+#' @param W snapsack size
+#' @return result the list with maximum values and elements.
 knapsack_brute_force<-function(x, W){
   v <-x$v
   w <-x$w
@@ -58,9 +68,3 @@ knapsack_brute_force<-function(x, W){
 }
 
 
-#knapsack_brute_force(x = knapsack_objects3, W = 6)
-#knapsack_brute_force(x = knapsack_objects2, W = 6)
-#knapsack_brute_force(x = knapsack_objects[1:8,], W = 3500)
-#knapsack_brute_force(x = knapsack_objects[1:12,], W = 3500)
-#knapsack_brute_force(x = knapsack_objects[1:8,], W = 2000)
-#knapsack_brute_force(x = knapsack_objects[1:12,], W = 2000)
