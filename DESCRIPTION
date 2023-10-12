@@ -13,3 +13,7 @@ RoxygenNote: 7.2.3
 Depends:
   R (>= 3.5.0),
   rlist
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+
