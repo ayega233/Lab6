@@ -1,7 +1,6 @@
 #' Solution for the knapsack problem
 #' @import rlist
 
-
 #' @export brute_force_knapsack
 #' @description
 #' knapsack_brute_force search, i.e. going through all possible alternatives and return the maximum value
@@ -9,6 +8,8 @@
 #' @param x knapsack object as dataframe
 #' @param W knapsack size
 #' @return result the list with maximum values and elements.
+
+
 
 brute_force_knapsack<-function(x, W){
   v <-x$v

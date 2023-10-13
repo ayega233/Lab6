@@ -7,9 +7,9 @@
 brute_force_knapsack(x, W)
 }
 \arguments{
-\item{x}{snapsack object as dataframe}
+\item{x}{knapsack object as dataframe}
 
-\item{W}{snapsack size}
+\item{W}{knapsack size}
 }
 \value{
 result the list with maximum values and elements.

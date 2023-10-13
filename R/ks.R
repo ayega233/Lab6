@@ -1,3 +1,8 @@
+library(profvis)
+
+#' @export knapsack_dynamic
+
+p1 <- profvis({
 knapsack_dynamic<-function(x, W){
   v <-x$v
   w <-x$w
@@ -48,3 +53,6 @@ knapsack_dynamic<-function(x, W){
 }
 
 
+a <- knapsack_dynamic(x = knapsack_objects[1:12,], W = 3500)
+})
+print(p1)
