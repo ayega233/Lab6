@@ -2,7 +2,7 @@
 % Please edit documentation in R/bf.R
 \name{brute_force_knapsack}
 \alias{brute_force_knapsack}
-\title{Solution for the knapsack problem}
+\title{Solution for the knapsack problem by brute force}
 \usage{
 brute_force_knapsack(x, W, parallel = FALSE)
 }
@@ -10,6 +10,8 @@ brute_force_knapsack(x, W, parallel = FALSE)
 \item{x}{knapsack object as dataframe}
 
 \item{W}{knapsack size}
+
+\item{parallel}{enable disable parallel processing}
 }
 \value{
 result the list with maximum values and elements.
@@ -17,4 +19,7 @@ result the list with maximum values and elements.
 \description{
 knapsack_brute_force search, i.e. going through all possible alternatives and return the maximum value
 found. This approach is of complexity O(2n) since all possible combinations 2n needs to be evaluated
+}
+\details{
+Solution for the knapsack problem
 }

@@ -1,7 +1,13 @@
-library(profvis)
+#library(profvis)
 
+#' @title Solution for the knapsack problem by dynamic programming
 #' @export knapsack_dynamic
-
+#' @description
+#' knapsack_dynamic search, i.e. going through all possible alternatives and return the maximum value
+#'found. This approach is of complexity O(2n) since all possible combinations 2n needs to be evaluated
+#' @param x knapsack object as dataframe
+#' @param W knapsack size
+#' @return result the list with maximum values and elements.
 #p1 <- profvis({
 knapsack_dynamic<-function(x, W){
   v <-x$v

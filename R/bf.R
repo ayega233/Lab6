@@ -2,12 +2,14 @@
 #' @import rlist
 #' @import parallel
 
+#' @title Solution for the knapsack problem by brute force
 #' @export brute_force_knapsack
 #' @description
 #' knapsack_brute_force search, i.e. going through all possible alternatives and return the maximum value
 #'found. This approach is of complexity O(2n) since all possible combinations 2n needs to be evaluated
 #' @param x knapsack object as dataframe
 #' @param W knapsack size
+#' @param parallel enable disable parallel processing
 #' @return result the list with maximum values and elements.
 
 brute_force_knapsack<-function(x, W,parallel=FALSE){
