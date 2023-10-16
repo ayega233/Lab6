@@ -171,11 +171,12 @@ system.time(greedy_knapsack(x = knapsack_objects[1:8,], W = 3500))
 What performance gain could you get by trying to improving your code?
 
 #### Answer
-
-Try to speedup algorithem
+As we identify we can remove all combinations which greater than weight of snapsack.But we tryied speedup algorithm by using 
+parallelizing the bottlenacks.Then it faster than previuse algorithm.
 
 #### Question-6
 
 What performance gain could you get by parallelizing brute force search?
-
-
+      speed up execution time
+      data analysis part is fast
+      improve the reliability of computations
